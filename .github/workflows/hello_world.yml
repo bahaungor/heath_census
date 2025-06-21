@@ -8,7 +8,7 @@ on: # Trigger for the workflow
 
 jobs: # Jobs to run when workflow is triggered
   hello_world_job: # Name of the first job
-    runs-on: ubuntu-20.04 # Env to run job on
+    runs-on: ubuntu-22.04 # Env to run job on
     steps: # Steps to execute in this job
       - name: Say hello # Define new step
         run: echo "Hello World!"
