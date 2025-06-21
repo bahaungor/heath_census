@@ -1,0 +1,14 @@
+name: Hello World! # Name of the worflow
+
+on: # Trigger for the workflow
+  push:
+    branches: # or like this → ["main"]
+      - main
+      - master
+
+jobs: # Jobs to run when workflow is triggered
+  hello_world_job: # Name of the first job
+    runs-on: ubuntu-22.04 # Env to run job on
+    steps: # Steps to execute in this job
+      - name: Say hello # Define new step
+        run: echo "Hello World!"
